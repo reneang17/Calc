@@ -17,6 +17,7 @@ def test_Calc_object_fizz():
 def test_add():
     result = Calc.add(3, 4)
     assert result == 7
+    print('marker')
 
 def test_add_string():
     with pytest.raises(TypeError):
@@ -32,7 +33,7 @@ def test_mult():
 
 def test_mult_string():
     with pytest.raises(TypeError):
-        Calc.mutl("string", 4)
+        Calc.mult("string", 4)
 
 def test_mult_float():
     with pytest.raises(TypeError):
